@@ -5,10 +5,19 @@ export default function Layout() {
     return (
         <Stack>
             <Stack.Screen
-                name="test"
+                name="index"
                 options={{
                     presentation: 'modal',
                     headerLeft: () => (
+                        <View
+                            style={{
+                                backgroundColor: 'black',
+                                width: 50,
+                                height: 100,
+                            }}
+                        />
+                    ),
+                    headerRight: () => (
                         <View
                             style={{
                                 backgroundColor: 'black',
